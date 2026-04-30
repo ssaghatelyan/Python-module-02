@@ -6,9 +6,10 @@ def garden_operations(operation_number: int) -> None:
     elif operation_number == 2:
         open("/non/existent/file", "r")
     elif operation_number == 3:
-        "Hello" + 42
+        "Hello" + 42 # type: ignore
     else:
         return
+
 
 def test_error_types() -> None:
     print("=== Garden Error Types Demo ===")
@@ -27,6 +28,7 @@ def test_error_types() -> None:
         else:
             print("Operation completed successfully")
     print("\nAll error types tested successfully!")
+
 
 if __name__ == "__main__":
     test_error_types()
